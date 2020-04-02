@@ -11,9 +11,9 @@ static double g(double x)
 {
     double result = 1.0;
 
-    result += ((9.0 * x * x) / 2.0);
-    result += ((27.0 * x * x * x * x) / 8.0);
-    result += ((81.0 * x * x * x * x * x * x) / 80.0);
+    result += ((9.0 * pow(x, 2.0)) / 2.0);
+    result += ((27.0 * pow(x, 4.0)) / 8.0);
+    result += ((81.0 * pow(x, 6.0)) / 80.0);
 
     return result;
 }
